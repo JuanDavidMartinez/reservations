@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <title>Gordo Air</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<script src="/jquery/jquery.js"></script>
+<script>
+  $( document ).ready(function() {
+      console.log( "ready!" );
+      $.get( "/cities", function( data ) {
+        data.forEach(element => {
+          console.log(element);
+          $('#ciudad_origen').append('<option value="'+element.id_ciudad+'">'+element.nombre+'</option>');
+        });
+      });
+  });
+
+  function getCitiesByOrigin() {
+    var ciudad_origen = $('#ciudad_origen').val();
+    $('#ciudad_destino').html("");
+    $.get( "/cities?origen="+ciudad_origen, function( data ) {
+        data.forEach(element => {
+          console.log(element);
+          $('#ciudad_destino').append('<option value="'+element.id_ciudad+'">'+element.nombre+'</option>');
+        });
+      });
+  }
+
+</script>
+
+<body>
+  <h1>Reservaciones de vuelos</h1>
+  <label>Ciudad Origen:</label>
+  <select id="ciudad_origen" name="select" onchange="getCitiesByOrigin()"></select>
+  <label>Ciudad Destino:</label>
+  <select id="ciudad_destino" name="select"></select>
+</body>
+
+</html>
