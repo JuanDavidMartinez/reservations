@@ -10,6 +10,8 @@ $(function() {
     //Carga datepicker
     $( "#fecha_salida" ).datepicker();
     $( "#fecha_retorno" ).datepicker();
+    //Carga dataTable
+    $( "#dataTable" ).DataTable();
 });
 
 function getCitiesByOrigin() {
