@@ -21,6 +21,7 @@ app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 app.use('/jquery-ui', express.static(__dirname + '/node_modules/jquery-ui/dist/'));
 app.use('/datatables', express.static(__dirname + '/node_modules/datatables.net/js/'));
 app.use('/datatablesDt', express.static(__dirname + '/node_modules/datatables.net-dt/css/'));
+app.use('/jquerySteps', express.static(__dirname + '/node_modules/jquery.steps/dist/'));
 
 app.use('/', indexRouter);
 app.use('/requirements', requirementRouter);
@@ -28,5 +29,9 @@ app.use('/cities', citiesRouter);
 app.use('/flights', flightsRouter);
 app.use('/reservations', reservationsRouter);
 app.use('/summary-trip', summaryRouter);
+
+app.get('/pasajeros', function (req, res, next) {
+    res.sendFile(__dirname + '/public/pasajeros.html');
+});
 
 module.exports = app;
