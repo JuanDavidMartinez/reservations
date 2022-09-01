@@ -19,13 +19,13 @@
     <label>Ciudad Destino:</label>
     <select id="ciudad_destino" name="select"></select>
     <p>Por favor seleccione el tipo de viaje que desea tomar:</p>
-    <input type="radio" id="OW" name="fav_language" value="OW">
-    <label for="OW">Viaje de ida</label><br>
-    <input type="radio" id="RT" name="fav_language" value="RT">
-    <label for="RT">Viaje ida y regreso</label><br>
+    <input type="radio" id="OW" name="fav_language" value="OW" onchange="deshabilitarRetorno()">
+    <label for="OW">Viaje de ida</label><br>
+    <input type="radio" id="RT" name="fav_language" value="RT" onchange="habilitarRetorno()">
+    <label for="RT">Viaje ida y regreso</label><br>
     <br><br>
-    Salida: <input type="text" id="fecha_salida">
-    Retorno: <input type="text" id="fecha_retorno">
+    <label id="label_retorno">Salida: </label><input type="text" id="fecha_salida">
+    <label id="label_retorno">Retorno: </label><input type="text" id="fecha_retorno">
   </main>
 </body>
 

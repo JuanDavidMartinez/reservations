@@ -22,3 +22,13 @@ function getCitiesByOrigin() {
       });
     });
 }
+
+function deshabilitarRetorno() {
+  $('#label_retorno').hide();
+  $('#fecha_retorno').hide();
+}
+
+function habilitarRetorno() {
+  $('#label_retorno').show();
+  $('#fecha_retorno').show();
+}
