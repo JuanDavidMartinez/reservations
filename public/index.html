@@ -1,25 +1,32 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <title>Prueba Reservas</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/jquery-ui/themes/base/jquery-ui.min.css">
+  <script src="/jquery/jquery.js"></script>
+  <script src="/jquery-ui/jquery-ui.min.js"></script>
+  <script src="./javascripts/index_functions.js"></script>
 </head>
-<link rel="stylesheet" href="/jquery-ui/themes/base/jquery-ui.min.css">
-<script src="/jquery/jquery.js"></script>
-<script src="/jquery-ui/jquery-ui.min.js"></script>
-<script src="./javascripts/index_functions.js"></script>
 
 <body>
-  <h1>Reservaciones de vuelos</h1>
-  <label>Ciudad Origen:</label>
-  <select id="ciudad_origen" name="select" onchange="getCitiesByOrigin()">
-    <option value="0">seleccione ciudad</option>
-  </select>
-  <label>Ciudad Destino:</label>
-  <select id="ciudad_destino" name="select"></select>
-  <br><br>
-  Salida: <input type="text" id="fecha_salida">
-  Retorno: <input type="text" id="fecha_retorno">
+  <main class="container">
+    <h1>Reserva tu vuelo</h1>
+    <label>Ciudad Origen:</label>
+    <select id="ciudad_origen" name="select" onchange="getCitiesByOrigin()">
+      <option value="0">seleccione ciudad</option>
+    </select>
+    <label>Ciudad Destino:</label>
+    <select id="ciudad_destino" name="select"></select>
+    <p>Por favor seleccione el tipo de viaje que desea tomar:</p>
+    <input type="radio" id="OW" name="fav_language" value="OW">
+    <label for="OW">Viaje de ida</label><br>
+    <input type="radio" id="RT" name="fav_language" value="RT">
+    <label for="RT">Viaje ida y regreso</label><br>
+    <br><br>
+    Salida: <input type="text" id="fecha_salida">
+    Retorno: <input type="text" id="fecha_retorno">
+  </main>
 </body>
 
-</html>
+</htmls>
