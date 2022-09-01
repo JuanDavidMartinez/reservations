@@ -1,11 +1,11 @@
 var pgp = require("pg-promise")(/*options*/);
 
 const connectionConf = {
-  host: 'ec2-44-209-158-64.compute-1.amazonaws.com',
+  host: 'ec2-3-93-206-109.compute-1.amazonaws.com',
   port: 5432,
-  database: 'd302tv251jeifl',
-  user: 'rfmymrtudwspas',
-  password: '186471e5e95c11bf195e5f343adb9b899076597a67ad48fd199c2dd040854eab',
+  database: 'deid77rhk6trmi',
+  user: 'rftlhnpssqgycp',
+  password: '531f4c59bece8d35bde3ecfc7b1635027604af6f1d4abf93062260aaeb467e3a',
   ssl: {
     rejectUnauthorized: false
   }
