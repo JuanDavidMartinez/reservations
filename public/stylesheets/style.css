@@ -2,7 +2,50 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+.titlePage{
+  background-color: forestgreen;
+  color: antiquewhite;
+  padding: 10px 20px 10px 20px;
+}
+.cities{
+  padding: 20px 20px 10px 20px;
+}
+label{
+  padding-left: 20px;
+}
+.typeFlight{
+  padding-left: 40px;
+}
+.calendar{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.passengers{
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.titlePassengers{
+  padding-left: 20px;
+}
+.button{
+  background-color: forestgreen;
+  color: antiquewhite;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-weight: 60px;
+  line-height: 20px;
+  padding: 6px 16px;
+}
+.searchFlight{
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
 a {
   color: #00B7FF;
 }
