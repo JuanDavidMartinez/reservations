@@ -13,24 +13,70 @@
 
 <body>
   <main class="container">
-    <h1>Reserva tu vuelo</h1>
-    <label>Ciudad Origen:</label>
-    <select id="ciudad_origen" name="select" onchange="getCitiesByOrigin()">
-      <option value="0">seleccione ciudad</option>
-    </select>
-    <label>Ciudad Destino:</label>
-    <select id="ciudad_destino" name="select"></select>
-    <p>Por favor seleccione el tipo de viaje que desea tomar:</p>
-    <input type="radio" id="OW" name="fav_language" value="OW" onchange="deshabilitarRetorno()">
-    <label for="OW">Viaje de ida</label><br>
-    <input type="radio" id="RT" name="fav_language" value="RT" onchange="habilitarRetorno()">
-    <label for="RT">Viaje ida y regreso</label><br>
-    <br><br>
-    <label id="label_salida">Salida: </label><input type="text" id="fecha_salida">
-    <label id="label_retorno">Retorno: </label><input type="text" id="fecha_retorno">
-    <br><br>
-    <button type="button" onclick="buscarVuelos()">Buscar</button>
-    <br><br>
+    <div class="titlePage">
+      <h1>Reserva tu vuelo</h1>
+    </div>
+    <div class="cities">
+      <label>Ciudad Origen:</label>
+      <select id="ciudad_origen" name="select" onchange="getCitiesByOrigin()">
+        <option value="0">seleccione ciudad</option>
+      </select>
+      <label>Ciudad Destino:</label>
+      <select id="ciudad_destino" name="select"></select>
+    </div>
+    <div class="typeFlight">
+      <p>Por favor seleccione el tipo de viaje que desea tomar:</p>
+      <input type="radio" id="OW" name="fav_language" value="OW" onchange="deshabilitarRetorno()">
+      <label for="OW">Viaje de ida</label><br>
+      <input type="radio" id="RT" name="fav_language" value="RT" onchange="habilitarRetorno()">
+      <label for="RT">Viaje ida y regreso</label><br>
+    </div>
+    <div class="calendar">
+      <label id="label_salida">Salida: </label><input type="text" id="fecha_salida">
+      <label id="label_retorno">Retorno: </label><input type="text" id="fecha_retorno">
+    </div>
+    <div class="passengers">
+      <p class="titlePassengers">Pasajeros</p>
+      <label>Adultos</label>
+      <select id="adultos" name="select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <label>Niños</label>
+      <select id="niños" name="select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <label>Infantes</label>
+      <select id="infantes" name="select">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </div>
+    <div class="searchFlight">
+      <button class="button" type="button" onclick="buscarVuelos()">Buscar</button>  
+    </div>
     <label id="label_t_salida">Vuelos Ida: </label>
     <table id="tablaIda" class="display" style="width:100%">
         <thead>
