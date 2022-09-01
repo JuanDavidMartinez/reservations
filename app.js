@@ -19,6 +19,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
 app.use('/jquery-ui', express.static(__dirname + '/node_modules/jquery-ui/dist/'));
+app.use('/datatables', express.static(__dirname + '/node_modules/datatables.net/js/'));
+app.use('/datatablesDt', express.static(__dirname + '/node_modules/datatables.net-dt/css/'));
 
 app.use('/', indexRouter);
 app.use('/requirements', requirementRouter);

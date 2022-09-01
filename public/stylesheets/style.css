@@ -1,11 +1,17 @@
 *{
   box-sizing: border-box;
+  margin: 10px;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
 }
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
 }
-
+.container{
+  display: inline;
+}
 a {
   color: #00B7FF;
 }
