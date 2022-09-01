@@ -26,9 +26,9 @@
     </div>
     <div class="typeFlight">
       <p>Por favor seleccione el tipo de viaje que desea tomar:</p>
-      <input type="radio" id="OW" name="fav_language" value="OW" onchange="deshabilitarRetorno()">
+      <input type="radio" id="radioOw" value="OW" onchange="deshabilitarRetorno()">
       <label for="OW">Viaje de ida</label><br>
-      <input type="radio" id="RT" name="fav_language" value="RT" onchange="habilitarRetorno()">
+      <input type="radio" id="radioRt" value="RT" onchange="habilitarRetorno()">
       <label for="RT">Viaje ida y regreso</label><br>
     </div>
     <div class="calendar">
@@ -50,7 +50,7 @@
         <option value="8">8</option>
       </select>
       <label>Niños</label>
-      <select id="niños" name="select">
+      <select id="ninos" name="select">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -98,11 +98,15 @@
         </tbody>
     </table>
     <br>
-    <label id="label_t_retorno">Vuelos Regreso: </label>
+    <label id="label_t_retorno">Vuelos Regreso:</label>
     <table id="tablaRetorno" class="display" style="width:100%">
       <tbody>
       </tbody>
-  </table>
+    </table>
+    <br><br>
+    <div class="searchFlight">
+      <button class="button" id="continuar" type="button" style="display: none;">Continuar</button>
+    </div>
   </main>
 </body>
 
